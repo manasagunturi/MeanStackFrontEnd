@@ -9,6 +9,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { ProfileViewComponent } from './profile-view/profile-view.component';
 import { UserServiceService } from './user-service.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import { UserServiceService } from './user-service.service';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [UserServiceService],
   bootstrap: [AppComponent]
