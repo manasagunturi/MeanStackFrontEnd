@@ -41,6 +41,9 @@ export class SignInComponent implements OnInit {
       console.log(res);
       this.router.navigate(['/profile'])
       
+    },(err:any)=>{
+      console.log(err);
+      
     })
   }
 }

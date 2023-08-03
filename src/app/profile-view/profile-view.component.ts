@@ -9,15 +9,19 @@ import { UserServiceService } from '../user-service.service';
 export class ProfileViewComponent implements OnInit {
 userData:any
   constructor(
-    private service:UserServiceService
+    private service:UserServiceService,
   ) { }
 
   ngOnInit(): void {
-    this.service.getData().subscribe((res:any)=>{
-      this.userData=res.users
+
+    this.service.showMyProfile().subscribe((res:any)=>{
+      console.log(res.data);
+      
+      this.userData=res.data.user
       
     })
 
   }
+
 
 }
